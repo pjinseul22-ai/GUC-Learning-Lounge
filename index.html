@@ -1,6 +1,8 @@
-<html lang="ko"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>GUC 러닝라운지</title>
 <style>
 :root{
@@ -201,9 +203,9 @@ footer strong{color:rgba(255,255,255,.8);}
 }
 </style>
 </head>
-<body class="admin-mode">
+<body>
 
-<div class="abr" id="abr" style="display: block;">
+<div class="abr" id="abr">
   <div class="abi">
     <span class="abl">✏️ 편집 모드 — 각 항목의 수정/삭제 버튼으로 내용을 변경하세요</span>
     <button class="abtn adk" onclick="openOrgForm()">🏢 기관정보</button>
@@ -218,7 +220,7 @@ footer strong{color:rgba(255,255,255,.8);}
 
 <div class="tb">
   <div class="tbi">
-    <div class="brand" id="brand-el" style="display: inline-flex; align-items: center; gap: 10px;"><img src="logo.png" style="height:30px;object-fit:contain;" onerror="this.style.display='none'">GUC <span>러닝라운지</span></div>
+    <div class="brand" id="brand-el"></div>
     <nav class="tnav">
       <a onclick="G('nsec')">러닝 소식</a>
       <a onclick="G('sasec')">사내강사 교육</a>
@@ -227,7 +229,7 @@ footer strong{color:rgba(255,255,255,.8);}
       <a onclick="G('psec')">참여방법</a>
       <a onclick="G('fsec')">FAQ</a>
     </nav>
-    <button class="tcbtn" id="tcbtn">📞 박진슬 대리 031-980-8335</button>
+    <button class="tcbtn" id="tcbtn"></button>
     <button class="hbtn" id="hbtn" onclick="toggleMNav()" aria-label="메뉴">☰</button>
   </div>
 </div>
@@ -241,15 +243,15 @@ footer strong{color:rgba(255,255,255,.8);}
 </div>
 
 <section class="hero">
-  <div class="htag" id="hero-tag">2026년 연간 전체훈련과정</div>
-  <h1 id="hero-h1">오늘은 어떤 배움을 만나볼까요?</h1>
-  <p class="hsub" id="hero-sub">배움은 하루를 바꾸고, 성장은 조직을 변화시킵니다.</p>
+  <div class="htag" id="hero-tag"></div>
+  <h1 id="hero-h1"></h1>
+  <p class="hsub" id="hero-sub"></p>
   <div class="hqbox">
     <div class="hqlb">☕ 오늘의 한 문장</div>
-    <div class="hqtx" id="hero-quote">지식은 공유할 때 비로소 완성됩니다.</div>
+    <div class="hqtx" id="hero-quote"></div>
   </div>
-  <div class="hcourses" id="hero-courses"><p style="color:rgba(255,255,255,.5);font-size:14px;">이번 달 예정된 과정이 없습니다.</p></div>
-  <div class="hstats" id="hstats"><div class="hstat"><div class="num">6개</div><div class="lbl">사내강사 교육</div></div><div class="hstat"><div class="num">12개</div><div class="lbl">집체교육</div></div><div class="hstat"><div class="num">7개</div><div class="lbl">신청 가능</div></div></div>
+  <div class="hcourses" id="hero-courses"></div>
+  <div class="hstats" id="hstats"></div>
 </section>
 
 <div class="bw" style="border-bottom:1px solid var(--bd);">
@@ -259,21 +261,20 @@ footer strong{color:rgba(255,255,255,.8);}
       <h2>러닝 소식</h2>
       <button class="addbtn" onclick="openNoticeForm(null)">➕ 추가</button>
     </div>
-    <div class="nbox" id="nlist"><div class="nrow"><span class="nnew">새 소식</span><span class="ntx">예정으로 표시된 교육은 일정, 장소 등이 변경될 수 있으므로 확정 공문으로 최종 확인 부탁드립니다.</span><span class="ndt">2026-07-23</span><span class="nae"><button class="aebn aem2" onclick="openNoticeForm('mrx7w7l586h')">✏️</button><button class="aebn aed2" onclick="delItem('notices','mrx7w7l586h')">🗑️</button></span></div><div class="nrow"><span class="nnew">새 소식</span><span class="ntx">GUC 러닝라운지는 공사의 연간 교육일정과 교육정보를 확인할 수 있는 공간입니다. 교육 참여자 모집 및 교육 확정 일정은 별도 공문을 통해 안내되오니 참고하시기 바랍니다.</span><span class="ndt">2026-06-25</span><span class="nae"><button class="aebn aem2" onclick="openNoticeForm('n1')">✏️</button><button class="aebn aed2" onclick="delItem('notices','n1')">🗑️</button></span></div><div class="nrow"><span class="ntx">사내강사 강의계획서는 공문 붙임문서로 확인부탁드립니다. </span><span class="ndt">2026-06-15</span><span class="nae"><button class="aebn aem2" onclick="openNoticeForm('n2')">✏️</button><button class="aebn aed2" onclick="delItem('notices','n2')">🗑️</button></span></div></div>
+    <div class="nbox" id="nlist"></div>
   </div>
 </div>
 
-<div id="newsec" style="display: block;">
+<div id="newsec" style="display:none;">
   <div class="sec">
     <div class="sth">
       <div class="ico" style="background:var(--sl);">🌱</div>
       <h2>신규 과정</h2>
     </div>
     <p class="sec-sub">이번에 새로 개설된 과정이에요!</p>
-    <div class="cgrid" id="ncgrid"><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c1')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">전기분야 안전관리 교육</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 신준동 마스터</div><div class="meta">📅 2026-09-10 ~ 2026-10-15</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 16:00~18:00 / 시민회관 1층 세미나실</div><div class="meta">👥 정원 10명 · ⏱ 2시간 / 2차시</div><div class="reqb">⚠️ 교육 대상 : 전기안전관리 담당자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c1',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c1')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c2')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">환경 기능사 취득과정</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 곽원규 마스터</div><div class="meta">📅 2026-08-18 ~ 2027-03-26</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 15:00~18:00 / 무지개뜨는 언덕</div><div class="meta">👥 정원 10명 · ⏱ 3시간 / 매주 1회</div><div class="reqb">⚠️ 교육대상 : 자격 취득 희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c2',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c2')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c3')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">음향설비 유지관리 및 실무</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 안승우 마스터</div><div class="meta">📅 2026-08-05 ~ 2026-09-09</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 매주 수요일 15:00~18:00 /  시민회관 또는 기자재실습장(교육생사업장중심)</div><div class="meta">👥 정원 5명 · ⏱ 3시간 / 6차시</div><div class="reqb">⚠️ 교육대상자 : 음향설비, 대관관리 담당자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c3',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c3')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c4')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">출자법인관리 실무사례 과정</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 허성문 마스터</div><div class="meta">📅 2026-08-20 ~ 2026-08-20</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 10:00~11:00 / 본사 대회의실</div><div class="meta">👥 정원 10명 · ⏱ 1시간 / 1회차</div><div class="reqb">⚠️ 교육대상 : 개발사업담당자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c4',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c4')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('c6')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">실무자 AI 활용 디지털역량 강화교육</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-09-11 ~ 2026-09-11</div><div class="schb" style="background:var(--bx);border-color:var(--bl);color:var(--b);">🗂 13:00~18:00(5시간) / 본사 대회의실</div><div class="meta">👥 정원 25명 · ⏱ 5시간</div><div class="reqb">⚠️ 참석대상 : 공사 AI 교육 미이수자 우선 선발 및 수강 희망자
-※ 이수 후 현업적용 결과물 제출 과정</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c6',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c6')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('mrx7au2drds')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">직장 내 장애인 인식 개선 교육</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 교양 및 시책</div><div class="meta">👤 민현희 마스터</div><div class="meta">📅 2026-09-30 ~ 2026-12-31</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 10:00~11:00 / 재활용수집소 ※ 모집인원에 따라 변동가능</div><div class="meta">👥 정원 30명 · ⏱ 1시간 / 2회차</div><div class="reqb">⚠️ 교육대상 : 장애인 인식교육 온라인 강의 미이수자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7au2drds',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7au2drds')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7so7te4j')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">재취업지원 서비스(재무관리)</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 김정기 교수</div><div class="meta">📅 2026-11-05 ~ 2026-11-05</div><div class="meta">👥 정원 25명 · ⏱ 2시간</div><div class="reqb">⚠️ 참석대상 : 재취업지원서비스 교육 기본교육 이수자 및 참석 희망자</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7so7te4j',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7so7te4j')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7tb5m14n')"><div class="ncbadge">🌱 신규 과정</div><div class="ctop"><div class="ctit">재취업지원 서비스(구직전략)</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 김정기 교수</div><div class="meta">📅 2026-11-05 ~ 2026-11-05</div><div class="meta">👥 정원 25명 · ⏱ 2시간</div><div class="reqb">⚠️ 참석대상 : 재취업지원서비스 교육 기본교육 이수자 및 참석 희망자</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7tb5m14n',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7tb5m14n')">🗑️</button></div></div></div>
+    <div class="cgrid" id="ncgrid"></div>
   </div>
-  <hr class="hr">
+  <hr class="hr"/>
 </div>
 
 <div class="sec" id="sasec">
@@ -283,11 +284,11 @@ footer strong{color:rgba(255,255,255,.8);}
     <button class="addbtn" onclick="openCourseForm(null,'사내강사')">➕ 추가</button>
   </div>
   <p class="sec-sub">GUC 마스터(사내강사)가 직접 진행하는 교육과정입니다.</p>
-  <div class="frow" id="sa-filters"><button class="ftab" style="background:var(--fm);border-color:var(--fm);color:#fff;" onclick="setSaF('전체')">전체</button><button class="ftab" style="" onclick="setSaF('모집중')">모집중</button><button class="ftab" style="" onclick="setSaF('마감임박')">마감임박</button><button class="ftab" style="" onclick="setSaF('예정')">예정</button><button class="ftab" style="" onclick="setSaF('마감')">마감</button></div>
-  <div class="cgrid" id="sagrid"><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c1')"><div class="ctop"><div class="ctit">전기분야 안전관리 교육</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 신준동 마스터</div><div class="meta">📅 2026-09-10 ~ 2026-10-15</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 16:00~18:00 / 시민회관 1층 세미나실</div><div class="meta">👥 정원 10명 · ⏱ 2시간 / 2차시</div><div class="reqb">⚠️ 교육 대상 : 전기안전관리 담당자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c1',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c1')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c2')"><div class="ctop"><div class="ctit">환경 기능사 취득과정</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 곽원규 마스터</div><div class="meta">📅 2026-08-18 ~ 2027-03-26</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 15:00~18:00 / 무지개뜨는 언덕</div><div class="meta">👥 정원 10명 · ⏱ 3시간 / 매주 1회</div><div class="reqb">⚠️ 교육대상 : 자격 취득 희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c2',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c2')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c3')"><div class="ctop"><div class="ctit">음향설비 유지관리 및 실무</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 안승우 마스터</div><div class="meta">📅 2026-08-05 ~ 2026-09-09</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 매주 수요일 15:00~18:00 /  시민회관 또는 기자재실습장(교육생사업장중심)</div><div class="meta">👥 정원 5명 · ⏱ 3시간 / 6차시</div><div class="reqb">⚠️ 교육대상자 : 음향설비, 대관관리 담당자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c3',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c3')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('c4')"><div class="ctop"><div class="ctit">출자법인관리 실무사례 과정</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(전문)</div><div class="meta">👤 허성문 마스터</div><div class="meta">📅 2026-08-20 ~ 2026-08-20</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 10:00~11:00 / 본사 대회의실</div><div class="meta">👥 정원 10명 · ⏱ 1시간 / 1회차</div><div class="reqb">⚠️ 교육대상 : 개발사업담당자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c4',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c4')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('mrx78s5rbap')"><div class="ctop"><div class="ctit">한글문서 기초역량 향상과정</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 직무(공통)</div><div class="meta">👤 최준기 마스터</div><div class="meta">📅 2026-11-20 ~ 2026-11-27</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 16:00~18:00 / 본사 대회의실</div><div class="meta">👥 정원 10명 · ⏱ 2시간 / 2차시</div><div class="reqb">⚠️ 교육대상 : 문서작성 역량 향상 희망 직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx78s5rbap',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx78s5rbap')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--s);" onclick="openCourse('mrx7au2drds')"><div class="ctop"><div class="ctit">직장 내 장애인 인식 개선 교육</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--sx);color:var(--fm);border-color:var(--sl);">사내강사</span> 교양 및 시책</div><div class="meta">👤 민현희 마스터</div><div class="meta">📅 2026-09-30 ~ 2026-12-31</div><div class="schb" style="background:var(--sx);border-color:var(--sl);color:var(--fm);">🗂 10:00~11:00 / 재활용수집소 ※ 모집인원에 따라 변동가능</div><div class="meta">👥 정원 30명 · ⏱ 1시간 / 2회차</div><div class="reqb">⚠️ 교육대상 : 장애인 인식교육 온라인 강의 미이수자 및 수강희망직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7au2drds',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7au2drds')">🗑️</button></div></div></div>
+  <div class="frow" id="sa-filters"></div>
+  <div class="cgrid" id="sagrid"></div>
 </div>
 
-<hr class="hr">
+<hr class="hr"/>
 
 <div class="bw">
   <div class="sec" id="jcsec">
@@ -297,13 +298,12 @@ footer strong{color:rgba(255,255,255,.8);}
       <button class="addbtn" onclick="openCourseForm(null,'집체교육')">➕ 추가</button>
     </div>
     <p class="sec-sub">법정의무교육 등 외부 기관 위탁으로 진행되는 집체교육 일정입니다.</p>
-    <div class="frow" id="jc-filters"><button class="ftab" style="background:var(--b);border-color:var(--b);color:#fff;" onclick="setJcF('전체')">전체</button><button class="ftab" style="" onclick="setJcF('모집중')">모집중</button><button class="ftab" style="" onclick="setJcF('마감임박')">마감임박</button><button class="ftab" style="" onclick="setJcF('예정')">예정</button><button class="ftab" style="" onclick="setJcF('마감')">마감</button></div>
-    <div class="cgrid" id="jcgrid"><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('c5')"><div class="ctop"><div class="ctit">고위직 성희롱ㆍ성폭력예방 교육</div><span class="badge bg">모집중</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 한국양성평등진흥원 전문강사</div><div class="meta">📅 2026-08-24 ~ 2026-08-24</div><div class="schb" style="background:var(--bx);border-color:var(--bl);color:var(--b);">🗂 10:00~12:00 / 본사 대회의실</div><div class="meta">👥 정원 13명 · ⏱ 2시간</div><div class="reqb">⚠️ 참석대상 : 실장 이상(기관장 포함)</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c5',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c5')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('c6')"><div class="ctop"><div class="ctit">실무자 AI 활용 디지털역량 강화교육</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-09-11 ~ 2026-09-11</div><div class="schb" style="background:var(--bx);border-color:var(--bl);color:var(--b);">🗂 13:00~18:00(5시간) / 본사 대회의실</div><div class="meta">👥 정원 25명 · ⏱ 5시간</div><div class="reqb">⚠️ 참석대상 : 공사 AI 교육 미이수자 우선 선발 및 수강 희망자
-※ 이수 후 현업적용 결과물 제출 과정</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c6',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c6')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('c7')"><div class="ctop"><div class="ctit">성희롱·직장 내 괴롭힘 예방교육</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(전문)</div><div class="meta">👤 위탁기관</div><div class="meta">📅 2026-09-10 ~ 2026-09-10</div><div class="meta">👥 정원 200명 · ⏱ 1시간</div><div class="reqb">⚠️ 전 직원 연 1회 법정의무</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('c7',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','c7')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7jsfmx0u')"><div class="ctop"><div class="ctit">데이터기반 의사결정 교육(워크스킬 5급)_1회차</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-09-22 ~ 2026-09-22</div><div class="meta">👥 정원 25명 · ⏱ 4시간</div><div class="reqb">⚠️ 참석대상 : 전문직 이상 5급 직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7jsfmx0u',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7jsfmx0u')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7kr6irvy')"><div class="ctop"><div class="ctit">데이터기반 의사결정 교육(워크스킬 5급)_2회차</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-09-23 ~ 2026-09-23</div><div class="meta">👥 정원 25명 · ⏱ 4시간</div><div class="reqb">⚠️ 참석대상 : 전문직 이상 5급 직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7kr6irvy',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7kr6irvy')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7m2sa4xg')"><div class="ctop"><div class="ctit">보고 및 PT스킬 교육(워크스킬 6급)_1회차</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-10-20 ~ 2026-10-20</div><div class="meta">👥 정원 25명 · ⏱ 4시간</div><div class="reqb">⚠️ 참석대상 : 전문직 이상 6급 직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7m2sa4xg',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7m2sa4xg')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7mvsia50')"><div class="ctop"><div class="ctit">보고 및 PT스킬 교육(워크스킬 6급)_1회차</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-10-22 ~ 2026-10-22</div><div class="meta">👥 정원 25명 · ⏱ 4시간</div><div class="reqb">⚠️ 참석대상 : 전문직 이상 6급 직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7mvsia50',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7mvsia50')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7oc0gdx2')"><div class="ctop"><div class="ctit">협업기잔 문제해결과정(워크스킬 4급)</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 직무(공통)</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-10-28 ~ 2026-10-28</div><div class="meta">👥 정원 25명 · ⏱ 3시간</div><div class="reqb">⚠️ 참석대상 : 전문직 이상 4급 직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7oc0gdx2',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7oc0gdx2')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7phxowgb')"><div class="ctop"><div class="ctit">삶의 질을 높이는 워라밸 교육</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 삼성리더십센터</div><div class="meta">📅 2026-11-18 ~ 2026-11-18</div><div class="meta">👥 정원 20명 · ⏱ 3시간</div><div class="reqb">⚠️ 참석대상 : 전직원 중 참석 희망자</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7phxowgb',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7phxowgb')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7qw78mko')"><div class="ctop"><div class="ctit">재취업지원 서비스 교육(기본과정)</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 김정기교수</div><div class="meta">📅 2026-11-03 ~ 2026-11-03</div><div class="meta">👥 정원 25명 · ⏱ 8시간</div><div class="reqb">⚠️ 참석대상 : 만 55세~60세 임직원</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7qw78mko',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7qw78mko')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7so7te4j')"><div class="ctop"><div class="ctit">재취업지원 서비스(재무관리)</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 김정기 교수</div><div class="meta">📅 2026-11-05 ~ 2026-11-05</div><div class="meta">👥 정원 25명 · ⏱ 2시간</div><div class="reqb">⚠️ 참석대상 : 재취업지원서비스 교육 기본교육 이수자 및 참석 희망자</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7so7te4j',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7so7te4j')">🗑️</button></div></div><div class="ccard" style="border-top:3px solid var(--b);" onclick="openCourse('mrx7tb5m14n')"><div class="ctop"><div class="ctit">재취업지원 서비스(구직전략)</div><span class="badge bbl">예정</span></div><div class="meta"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span> 교양 및 시책</div><div class="meta">👤 김정기 교수</div><div class="meta">📅 2026-11-05 ~ 2026-11-05</div><div class="meta">👥 정원 25명 · ⏱ 2시간</div><div class="reqb">⚠️ 참석대상 : 재취업지원서비스 교육 기본교육 이수자 및 참석 희망자</div><div class="cae"><button class="aebn aem2" onclick="event.stopPropagation();openCourseForm('mrx7tb5m14n',null)">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('courses','mrx7tb5m14n')">🗑️</button></div></div></div>
+    <div class="frow" id="jc-filters"></div>
+    <div class="cgrid" id="jcgrid"></div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr"/>
 
 <div class="sec" id="isec">
   <div class="sth">
@@ -312,22 +312,22 @@ footer strong{color:rgba(255,255,255,.8);}
     <button class="addbtn" onclick="openInstrForm(null)">➕ 추가</button>
   </div>
   <p class="sec-sub">GUC 러닝라운지와 함께하는 사내강사를 소개합니다.</p>
-  <div class="mgrid" id="igrid"><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('i1')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">신</div></div><div class="mbody"><div class="mname">신준동 마스터</div><div class="morg">문화사업실 함상공원팀 · 부장</div><div class="mtags"><span class="mtag">전기</span><span class="mtag">전기안전관리</span></div><div class="mquote">"현장에서 바로 활용할 수 있는 전기안전관리 노하우를 전달합니다."</div><div class="mpick">📌 전기안전 - 안전한 현장을 만드는 첫걸음</div><div class="mcount">담당 과정 1개</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('i1')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','i1')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('i2')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">곽</div></div><div class="mbody"><div class="mname">곽원규 마스터</div><div class="morg">문화사업실 추모공원팀 · 팀장</div><div class="mtags"><span class="mtag">환경</span><span class="mtag">환경기능사</span></div><div class="mquote">"도전하는 만큼 성장합니다. 여러분의 첫걸음을 응원하겠습니다."</div><div class="mpick">📌 환경기능사 - 환경 분야 첫 기술자격에 도전하세요!</div><div class="mcount">담당 과정 1개</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('i2')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','i2')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('i3')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">민</div></div><div class="mbody"><div class="mname">민현희 마스터</div><div class="morg">환경사업실 재활용사업팀 · 대리</div><div class="mtags"><span class="mtag">법정교육</span><span class="mtag">직장내 장애인식 교육</span></div><div class="mquote">"작은 이해와 배려가 모두가 함께 잍터를 만듭니다."</div><div class="mpick">📌 법정의무교육, 사내강사와 함께 쉽게 이수하세요!</div><div class="mcount">담당 과정 1개</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('i3')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','i3')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('mrx29tphn35')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">장</div></div><div class="mbody"><div class="mname">장성국 마스터</div><div class="morg">문화사업실 태산패밀리파크팀 팀장</div><div class="mtags"><span class="mtag">조경</span><span class="mtag">조경기능사</span></div><div class="mquote">"25년 현장 경험과 합격 노하우를 담아 여러분의 자격 취득을 끝까지 함께하겠습니다"</div><div class="mpick">📌 합격자를 배출한 사내강사와 함께하는 조경기능사!</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx29tphn35')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx29tphn35')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('mrx2an5dq3i')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">최</div></div><div class="mbody"><div class="mname">최준기 마스터</div><div class="morg">교통사업실 교통지원팀 차장</div><div class="mtags"><span class="mtag">한글(HWP) 문서 작성 실무</span></div><div class="mquote">"한글의 작은 기능 하나가 업무의 큰 변화를 만듭니다."</div><div class="mpick">📌 한글 실무 — 문서 작성, 한글 사용이 두렵다면, 여기서 시작하세요.</div><div class="mcount">담당 과정 1개</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2an5dq3i')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2an5dq3i')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('mrx2azh0f7j')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">안</div></div><div class="mbody"><div class="mname">안승우 마스터</div><div class="morg">교통사업실 지하차도관리팀 팀장</div><div class="mtags"><span class="mtag">음향장비</span></div><div class="mquote">"직접 보고, 만지고, 운영하는 소규모 실습으로 음향장비 관리의 핵심을 쉽게 배워보세요"</div><div class="mpick">📌 음향관리 실무, 안정적인 시설 운영의 시작!</div><div class="mcount">담당 과정 1개</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2azh0f7j')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2azh0f7j')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #7846c3;" onclick="openInstr('mrx2bqu3hyg')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#7846c3;font-size:26px;">허</div></div><div class="mbody"><div class="mname">허성문 마스터</div><div class="morg">전략사업실 전략사업3팀 차장</div><div class="mtags"><span class="mtag">도시개발</span><span class="mtag">출자법인관리</span></div><div class="mquote">"도시개발사업은 교과서보다 현장이 더 많은 것을 알려줍니다. 실제 사업 추진 과정의 경험과 노하우를 아낌없이 공유하겠습니다"</div><div class="mpick">📌 출자법인 관리 실무, 사례로 배우다!</div><div class="mcount">담당 과정 1개</div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2bqu3hyg')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2bqu3hyg')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2dqxtug2')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">조</div></div><div class="mbody"><div class="mname">조경아 마스터</div><div class="morg">경영지원실 기획평가팀 차장</div><div class="mtags"><span class="mtag">경영전략</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2dqxtug2')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2dqxtug2')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2e1w516i')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">김</div></div><div class="mbody"><div class="mname">김정호 마스터</div><div class="morg">경영지원실 기획평가팀 대리</div><div class="mtags"><span class="mtag">CCM</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2e1w516i')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2e1w516i')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2eaxc6w8')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">이</div></div><div class="mbody"><div class="mname">이범형 마스터</div><div class="morg">경영지원실 인사총무팀 대리</div><div class="mtags"><span class="mtag">기록물관리</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2eaxc6w8')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2eaxc6w8')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2em07jfl')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">권</div></div><div class="mbody"><div class="mname">권혜민 마스터</div><div class="morg">경영지원실 인사총무팀 대리</div><div class="mtags"><span class="mtag">급여관리</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2em07jfl')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2em07jfl')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2eza3jim')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">김</div></div><div class="mbody"><div class="mname">김현선 마스터</div><div class="morg">경영재정실 재무회계1팀 차장</div><div class="mtags"><span class="mtag">지출관리</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2eza3jim')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2eza3jim')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2fcrpe9w')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">이</div></div><div class="mbody"><div class="mname">이서하 마스터</div><div class="morg">경영재정실 재무회계2팀 차장</div><div class="mtags"><span class="mtag">지출관리</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2fcrpe9w')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2fcrpe9w')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2ftzvjzp')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">박</div></div><div class="mbody"><div class="mname">박상미 마스터</div><div class="morg">경영재정실 재무회계2팀 대리</div><div class="mtags"><span class="mtag">구매관리</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2ftzvjzp')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2ftzvjzp')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx2gl2nv08')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">정</div></div><div class="mbody"><div class="mname">정상호 마스터</div><div class="morg">경영재정실 재무회계2팀 대리</div><div class="mtags"><span class="mtag">계약관리</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx2gl2nv08')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx2gl2nv08')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx5zo3zb7o')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">권</div></div><div class="mbody"><div class="mname">권이문 마스터</div><div class="morg">윤리경영실 실장</div><div class="mtags"><span class="mtag">갑질예방</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx5zo3zb7o')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx5zo3zb7o')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx5zwmf2u1')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">권</div></div><div class="mbody"><div class="mname">권형기 마스터</div><div class="morg">윤리경영실 청렴감사팀 차장</div><div class="mtags"><span class="mtag">청렴ㆍ반부패</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx5zwmf2u1')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx5zwmf2u1')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx64pjl55r')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">편</div></div><div class="mbody"><div class="mname">편정현 마스터</div><div class="morg">윤리경영실 안전보건팀 대리</div><div class="mtags"><span class="mtag">안전보건</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx64pjl55r')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx64pjl55r')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx6501ddap')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">박</div></div><div class="mbody"><div class="mname">박수지 마스터</div><div class="morg">윤리경영실 안전보건팀 대리</div><div class="mtags"><span class="mtag">안전보건</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx6501ddap')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx6501ddap')">🗑️</button></div></div><div class="mcard" style="border-top:3px solid #52b788;" onclick="openInstr('mrx65942xdm')"><div class="mav"><div class="avinit" style="width:68px;height:68px;min-width:68px;background:#52b788;font-size:26px;">김</div></div><div class="mbody"><div class="mname">김동원 마스터</div><div class="morg">윤리경영실 정보보안팀 차장</div><div class="mtags"><span class="mtag">정보보안</span></div></div><div class="mae"><button class="aebn aem2" onclick="event.stopPropagation();openInstrForm('mrx65942xdm')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('instructors','mrx65942xdm')">🗑️</button></div></div></div>
+  <div class="mgrid" id="igrid"></div>
 </div>
 
-<hr class="hr">
+<hr class="hr"/>
 
 <div class="sec" id="tlsec">
   <div class="sth">
     <div class="ico" style="background:var(--cd);">🗓️</div>
-    <h2 id="tl-title">2026년 연간 교육일정</h2>
+    <h2 id="tl-title"></h2>
   </div>
   <p class="sec-sub" style="margin-left:0;">과정을 클릭하면 상세 정보를 확인할 수 있습니다.</p>
-  <div class="tlwrap"><div class="tlgrid" id="tlgrid"><div><div class="mhd">1월</div><div class="mbod"></div></div><div><div class="mhd">2월</div><div class="mbod"></div></div><div><div class="mhd">3월</div><div class="mbod"></div></div><div><div class="mhd">4월</div><div class="mbod"></div></div><div><div class="mhd">5월</div><div class="mbod"></div></div><div><div class="mhd">6월</div><div class="mbod"></div></div><div><div class="mhd">7월</div><div class="mbod"></div></div><div><div class="mhd">8월</div><div class="mbod"><div class="tli c-sa" onclick="openCourse('c3')">음향설비 유지관리 및 실무</div><div class="tli c-sa" onclick="openCourse('c4')">출자법인관리 실무사례 과정</div><div class="tli c-jc" onclick="openCourse('c5')">고위직 성희롱ㆍ성폭력예방 교육</div></div></div><div><div class="mhd">9월</div><div class="mbod"><div class="tli c-sa" onclick="openCourse('c1')">전기분야 안전관리 교육</div><div class="tli c-sa" onclick="openCourse('c3')">음향설비 유지관리 및 실무</div><div class="tli c-jc" onclick="openCourse('c6')">실무자 AI 활용 디지털역량 강화교육</div><div class="tli c-jc" onclick="openCourse('c7')">성희롱·직장 내 괴롭힘 예방교육</div><div class="tli c-sa" onclick="openCourse('mrx7au2drds')">직장 내 장애인 인식 개선 교육</div><div class="tli c-jc" onclick="openCourse('mrx7jsfmx0u')">데이터기반 의사결정 교육(워크스킬 5급)_1회차</div><div class="tli c-jc" onclick="openCourse('mrx7kr6irvy')">데이터기반 의사결정 교육(워크스킬 5급)_2회차</div></div></div><div><div class="mhd">10월</div><div class="mbod"><div class="tli c-sa" onclick="openCourse('c1')">전기분야 안전관리 교육</div><div class="tli c-sa" onclick="openCourse('mrx7au2drds')">직장 내 장애인 인식 개선 교육</div><div class="tli c-jc" onclick="openCourse('mrx7m2sa4xg')">보고 및 PT스킬 교육(워크스킬 6급)_1회차</div><div class="tli c-jc" onclick="openCourse('mrx7mvsia50')">보고 및 PT스킬 교육(워크스킬 6급)_1회차</div><div class="tli c-jc" onclick="openCourse('mrx7oc0gdx2')">협업기잔 문제해결과정(워크스킬 4급)</div></div></div><div><div class="mhd">11월</div><div class="mbod"><div class="tli c-sa" onclick="openCourse('mrx78s5rbap')">한글문서 기초역량 향상과정</div><div class="tli c-sa" onclick="openCourse('mrx7au2drds')">직장 내 장애인 인식 개선 교육</div><div class="tli c-jc" onclick="openCourse('mrx7phxowgb')">삶의 질을 높이는 워라밸 교육</div><div class="tli c-jc" onclick="openCourse('mrx7qw78mko')">재취업지원 서비스 교육(기본과정)</div><div class="tli c-jc" onclick="openCourse('mrx7so7te4j')">재취업지원 서비스(재무관리)</div><div class="tli c-jc" onclick="openCourse('mrx7tb5m14n')">재취업지원 서비스(구직전략)</div></div></div><div><div class="mhd">12월</div><div class="mbod"><div class="tli c-sa" onclick="openCourse('mrx7au2drds')">직장 내 장애인 인식 개선 교육</div></div></div></div></div>
-  <div class="lgd" id="legend"><span class="lgi"><span class="ldot" style="background:var(--sl);border-left:3px solid var(--s);"></span>사내강사 교육</span><span class="lgi"><span class="ldot" style="background:var(--bl);border-left:3px solid var(--b);"></span>집체교육</span><span class="lgi"><span class="ldot" style="background:#f1f5f9;border-left:3px solid #cbd5e1;"></span>마감</span></div>
+  <div class="tlwrap"><div class="tlgrid" id="tlgrid"></div></div>
+  <div class="lgd" id="legend"></div>
 </div>
 
-<hr class="hr">
+<hr class="hr"/>
 
 <div class="bw">
   <div class="sec" id="psec">
@@ -336,15 +336,15 @@ footer strong{color:rgba(255,255,255,.8);}
       <h2>참여 방법</h2>
     </div>
     <p class="sec-sub" style="margin-left:0;">교육 참여는 <strong>공문을 통한 실(부서) 단위 신청</strong>으로 진행됩니다.</p>
-    <div class="pwrap" id="pwrap"><div class="pstep"><div class="pc">01</div><div class="pt">교육일정 공문 수신</div><p class="pd">교육부서에서 교육과정·일정·대상을 안내하는 공문을 각 실/부서로 발송합니다.</p><span class="pbg">교육부서 → 각 실</span></div><div class="pstep"><div class="pc">02</div><div class="pt">참석자 취합</div><p class="pd">각 실(부서)에서 참석 희망자를 취합하고 참석자 명단을 작성합니다.</p><span class="pbg">각 실 내부</span></div><div class="pstep"><div class="pc">03</div><div class="pt">명단 공문 회신</div><p class="pd">작성된 참석자 명단을 공문으로 교육부서에 회신합니다.</p><span class="pbg">각 실 → 교육부서</span></div><div class="pstep"><div class="pc">04</div><div class="pt">명단 취합 및 확정</div><p class="pd">교육부서가 전체 명단을 취합하여 확정 후 참석 안내를 발송합니다.</p><span class="pbg">교육부서 확정</span></div><div class="pstep"><div class="pc">05</div><div class="pt">교육 참석</div><p class="pd">확정된 일정에 맞춰 교육에 참석합니다.</p><span class="pbg">완료</span></div></div>
+    <div class="pwrap" id="pwrap"></div>
     <div style="margin-top:22px;background:var(--sx);border:1px solid var(--sl);border-radius:14px;padding:16px 20px;">
       <p style="font-size:14px;font-weight:700;color:var(--f);margin-bottom:5px;">📌 문의처</p>
-      <p style="font-size:14px;color:var(--fm);" id="contact-info">담당부서: <strong>경영지원실 인사총무팀 </strong> &nbsp;|&nbsp; 연락처: <strong>박진슬 대리 031-980-8335</strong> &nbsp;|&nbsp; 이메일: <strong>abc@gp.or.kr</strong></p>
+      <p style="font-size:14px;color:var(--fm);" id="contact-info"></p>
     </div>
   </div>
 </div>
 
-<hr class="hr">
+<hr class="hr"/>
 
 <div class="sec" id="fsec">
   <div class="sth">
@@ -352,621 +352,54 @@ footer strong{color:rgba(255,255,255,.8);}
     <h2>자주 묻는 질문</h2>
     <button class="addbtn" onclick="openFaqForm(null)">➕ 추가</button>
   </div>
-  <div class="fqbox" id="fqbox"><div class="fitem"><div class="fqrow" onclick="toggleFaq(0)"><span class="fqtx">Q. 신청은 어떻게 하나요?</span><span class="faed"><button class="aebn aem2" onclick="event.stopPropagation();openFaqForm('f1')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('faqs','f1')">🗑️</button></span><span class="chev" id="chev-0">▾</span></div><div class="fa" id="fa-0">A. 공문을 통한 실(부서) 단위 신청입니다. 교육일정 공문 수신 후 부서 내 참석자를 취합하여 명단을 교육부서로 공문 회신해주세요.</div></div><div class="fitem"><div class="fqrow" onclick="toggleFaq(1)"><span class="fqtx">Q. 교육 일정이 변경되면?</span><span class="faed"><button class="aebn aem2" onclick="event.stopPropagation();openFaqForm('f4')">✏️</button><button class="aebn aed2" onclick="event.stopPropagation();delItem('faqs','f4')">🗑️</button></span><span class="chev" id="chev-1">▾</span></div><div class="fa" id="fa-1">A. 일정 변경 시 교육부서에서 변경 안내 공문을 재발송하며, 이 페이지도 즉시 업데이트됩니다.</div></div></div>
+  <div class="fqbox" id="fqbox"></div>
 </div>
 
-<footer id="footer"><strong>GUC 러닝라운지</strong><br>2026년 연간 전체훈련과정 | 문의: abc@gp.or.kr<div class="ftl"><a onclick="G('nsec')">러닝 소식</a><a onclick="G('sasec')">사내강사 교육</a><a onclick="G('jcsec')">집체교육</a><a onclick="G('isec')">GUC 마스터</a><a onclick="G('psec')">참여방법</a><a onclick="G('fsec')">FAQ</a></div></footer>
-<button class="fab" id="fab" onclick="fabClick()">✅</button>
+<footer id="footer"></footer>
+<button class="fab" id="fab" onclick="fabClick()">⚙️</button>
 
-<div class="ov" id="ov1" style="display: none;"><div class="mo"><button class="mox" onclick="CM('ov1')">✕</button><div id="mc"><div style="display:flex;gap:8px;margin-bottom:10px;"><span class="tbadge" style="background:var(--bx);color:var(--b);border-color:var(--bl);">집체교육</span><span class="badge bbl">예정</span></div><div class="mtit">재취업지원 서비스(구직전략)</div><div class="msub">교양 및 시책 · 담당: 김정기 교수</div><div class="mrow"><span class="mk">교육기간</span><span class="mv">2026-11-05 ~ 2026-11-05</span></div><div class="mrow"><span class="mk">교육시간</span><span class="mv">2시간</span></div><div class="mrow"><span class="mk">정원</span><span class="mv">25명</span></div><hr class="mhr"><div class="mhow" style="background:var(--bx);border:1px solid var(--bl);color:var(--b);">교육일정 공문 수신 후 실(부서) 내 참석자를 취합하여 참석자 명단을 공문으로 교육부서에 회신해주세요.<br><br>문의: 경영지원실 인사총무팀  박진슬 대리 031-980-8335 / abc@gp.or.kr</div></div></div></div>
-<div class="ov" id="ov2" style="display: none;"><div class="mo"><button class="mox" onclick="CM('ov2')">✕</button><div id="mi"><div style="display:flex;align-items:center;gap:16px;margin-bottom:14px;border-top:4px solid #7846c3;padding-top:14px;"><div class="avinit" style="width:64px;height:64px;min-width:64px;background:#7846c3;font-size:24px;">안</div><div><div class="mtit">안승우 마스터</div><div class="msub" style="margin-bottom:0;">교통사업실 지하차도관리팀 팀장</div></div></div><div class="mquote">""직접 보고, 만지고, 운영하는 소규모 실습으로 음향장비 관리의 핵심을 쉽게 배워보세요.""</div><div class="mpick" style="margin-bottom:12px;">📌 음향관리 실무, 안정적인 시설 운영의 시작!</div><p style="font-size:14px;color:var(--mu);line-height:1.7;margin-bottom:12px;">공연장 음향 및 무대 운영 분야에서 13년 이상 실무를 수행하며 아르코극장, 서울예술대학교 드라마센터 등 다양한 공연시설에서 근무하였습니다. 무대예술전문인(음향) 자격과 전문교육 이수 경험을 바탕으로 공사가 운영·관리하는 시설의 음향장비 운영 및 관리에 필요한 실무 지식을 전달합니다.</p><div class="mtags" style="margin-bottom:12px;"><span class="mtag">음향장비</span></div></div></div></div>
-<div class="ov" id="ov3" style="display: none;"><div class="mo wide"><button class="mox" onclick="CM('ov3')">✕</button><div id="mf"><div class="mtit" style="margin-bottom:16px;">소식 수정</div><div class="fg"><label class="fl">날짜</label><input class="fi" type="date" id="f-date" value="2026-07-23"></div><div class="fg"><label class="fl">내용</label><textarea class="fta" id="f-text" rows="3">예정으로 표시된 교육은 일정, 장소 등이 변경될 수 있으므로 최종 교육정보는 확정 공문으로 최종 확인 부탁드립니다.</textarea></div><div class="fg" style="display:flex;align-items:center;gap:8px;"><input type="checkbox" id="f-new" checked=""><label for="f-new" style="font-size:13px;cursor:pointer;">새 소식 뱃지 표시</label></div><div class="fbtns"><button class="fbs" onclick="CM('ov3')">취소</button><button class="fbp" onclick="saveNotice('mrx7w7l586h')">저장</button></div></div></div></div>
+<div class="ov" id="ov1"><div class="mo"><button class="mox" onclick="CM('ov1')">✕</button><div id="mc"></div></div></div>
+<div class="ov" id="ov2"><div class="mo"><button class="mox" onclick="CM('ov2')">✕</button><div id="mi"></div></div></div>
+<div class="ov" id="ov3"><div class="mo wide"><button class="mox" onclick="CM('ov3')">✕</button><div id="mf"></div></div></div>
 
 <script>
 // @@EXPORT_DATA_START@@
 const DEFAULT_DATA = {
-  "_v": "1784793411942",
-  "org": {
-    "name": "GUC 러닝라운지",
-    "logo": "logo.png",
-    "heroTag": "연간 전체훈련과정",
-    "heroMotto": "오늘은 어떤 배움을 만나볼까요?",
-    "heroSub": "배움은 하루를 바꾸고, 성장은 조직을 변화시킵니다.",
-    "dept": "경영지원실 인사총무팀 ",
-    "contact": "박진슬 대리 031-980-8335",
-    "email": "abc@gp.or.kr",
-    "year": 2026
-  },
-  "quotes": [
-    "함께 배우는 순간, 우리의 조직도 함께 성장합니다.",
-    "작은 배움이 쌓여 큰 변화를 만들어냅니다.",
-    "오늘 배운 것이 내일의 나를 만듭니다.",
-    "배움에는 끝이 없고, 성장에는 경계가 없습니다.",
-    "호기심 하나가 새로운 가능성의 문을 엽니다.",
-    "잘 배운 사람이 잘 가르칩니다.",
-    "배움은 나눌수록 더 깊어집니다.",
-    "지식은 공유할 때 비로소 완성됩니다."
+  _v:"1",
+  org:{name:"GUC 러닝라운지",logo:"logo.png",heroTag:"연간 전체훈련과정",heroMotto:"오늘은 어떤 배움을 만나볼까요?",heroSub:"배움은 하루를 바꾸고, 성장은 조직을 변화시킵니다.",dept:"교육부서",contact:"031-980-8335",email:"edu@example.or.kr",year:2026},
+  quotes:["함께 배우는 순간, 우리의 조직도 함께 성장합니다.","작은 배움이 쌓여 큰 변화를 만들어냅니다.","오늘 배운 것이 내일의 나를 만듭니다.","배움에는 끝이 없고, 성장에는 경계가 없습니다.","호기심 하나가 새로운 가능성의 문을 엽니다.","잘 배운 사람이 잘 가르칩니다.","배움은 나눌수록 더 깊어집니다.","지식은 공유할 때 비로소 완성됩니다."],
+  notices:[
+    {id:"n1",date:"2026-06-25",text:"2026년 하반기 GUC 러닝라운지 교육과정 일정을 안내합니다. 별도 공문을 통해 실별 참석 명단을 제출해주세요.",isNew:true},
+    {id:"n2",date:"2026-06-15",text:"강의계획서 및 교육일정은 공문으로 별도 배부됩니다. 문의사항은 교육부서로 연락 바랍니다.",isNew:false}
   ],
-  "notices": [
-    {
-      "id": "mrx7w7l586h",
-      "date": "2026-07-23",
-      "text": "예정으로 표시된 교육은 일정, 장소 등이 변경될 수 있으므로 확정 공문으로 최종 확인 부탁드립니다.",
-      "isNew": true
-    },
-    {
-      "id": "n1",
-      "date": "2026-06-25",
-      "text": "GUC 러닝라운지는 공사의 연간 교육일정과 교육정보를 확인할 수 있는 공간입니다. 교육 참여자 모집 및 교육 확정 일정은 별도 공문을 통해 안내되오니 참고하시기 바랍니다.",
-      "isNew": true
-    },
-    {
-      "id": "n2",
-      "date": "2026-06-15",
-      "text": "사내강사 강의계획서는 공문 붙임문서로 확인부탁드립니다. ",
-      "isNew": false
-    }
+  instructors:[
+    {id:"i1",name:"김민지",photo:"",color:"#52b788",org:"경영지원팀 · 대리",specialty:"엑셀,데이터분석,업무자동화",quote:"데이터를 이해하면 일이 쉬워집니다. 함께 배워봐요!",pick:"이 달의 픽: 엑셀 자동화 — 반복 업무에서 해방되는 가장 빠른 길이에요.",intro:"실무 중심의 엑셀 강의를 10년째 진행하며 현업에서 바로 적용 가능한 내용을 전달합니다."},
+    {id:"i2",name:"박준호",photo:"",color:"#2d6a4f",org:"회계팀 · 과장",specialty:"지출회계,예산관리,회계법령",quote:"숫자 뒤에 숨겨진 이야기를 함께 읽어봅시다.",pick:"이 달의 픽: 지출회계 실무 — 공금 관리의 기본을 제대로 배워봐요.",intro:"회계 업무 15년 경력 기반으로 실제 사례 중심의 지출회계 교육을 진행합니다."},
+    {id:"i3",name:"이소희",photo:"",color:"#8b5cf6",org:"인사팀 · 사원",specialty:"조직심리,스트레스관리,코칭",quote:"잘 쉬는 것도 능력입니다. 회복탄력성을 키워드릴게요.",pick:"이 달의 픽: 스트레스 관리 — 번아웃 전에 꼭 들어야 할 과정이에요.",intro:"심리학 전공 및 상담 자격증 보유. 직원 정신건강과 회복탄력성 강의를 진행합니다."},
+    {id:"i4",name:"최준혁",photo:"",color:"#dc2626",org:"정보보안팀 · 팀장",specialty:"개인정보보호,정보보안,법령해석",quote:"내 정보를 지키는 것이 조직을 지키는 첫걸음입니다.",pick:"이 달의 픽: 개인정보보호 — 법 개정 내용, 이번 기회에 꼭 챙기세요.",intro:"개인정보보호 분야 전문가로 최신 법령 개정사항을 반영한 교육을 제공합니다."},
+    {id:"i5",name:"이서연",photo:"",color:"#db2777",org:"외부 초빙 강사",specialty:"캘리그라피,서예,드로잉",quote:"손끝에서 시작되는 작은 예술, 같이 그려봐요.",pick:"이 달의 픽: 캘리그라피 — 스트레스를 예술로 푸는 가장 귀여운 방법!",intro:"서예·캘리그라피 전문가로 입문부터 작품 제작까지 즐겁게 안내합니다."}
   ],
-  "instructors": [
-    {
-      "id": "i1",
-      "name": "신준동 마스터",
-      "org": "문화사업실 함상공원팀 · 부장",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "전기, 전기안전관리",
-      "quote": "현장에서 바로 활용할 수 있는 전기안전관리 노하우를 전달합니다.",
-      "pick": "전기안전 - 안전한 현장을 만드는 첫걸음",
-      "intro": "전기안전 분야에서 5년 이상 직무를 수행하며 산업안전지도사(전기분야), 전기기사, 전기공사기사 자격을 취득하였습니다. 전기안전관리기술교육을 이수하고 사업장 내 전기안전 및 산업안전보건 교육을 직접 실시하는 등 안전관리 전문성을 바탕으로 실질적인 안전관리 역량 향상을 지원합니다."
-    },
-    {
-      "id": "i2",
-      "name": "곽원규 마스터",
-      "org": "문화사업실 추모공원팀 · 팀장",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "환경, 환경기능사",
-      "quote": "도전하는 만큼 성장합니다. 여러분의 첫걸음을 응원하겠습니다.",
-      "pick": "환경기능사 - 환경 분야 첫 기술자격에 도전하세요!",
-      "intro": "하·폐수처리시설 운영 15년, 폐기물 중간처리 6년의 풍부한 현장 경험을 바탕으로 수질환경기사, 대기환경기사, 폐기물처리기사 자격을 보유하고 있습니다. 대학교 겸임교수와 기사·기능사 자격검정 감독위원으로 활동하며 이론과 실무를 아우르는 교육 경험을 갖추고 있습니다."
-    },
-    {
-      "id": "i3",
-      "name": "민현희 마스터",
-      "org": "환경사업실 재활용사업팀 · 대리",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "법정교육, 직장내 장애인식 교육",
-      "quote": "작은 이해와 배려가 모두가 함께 잍터를 만듭니다.",
-      "pick": "법정의무교육, 사내강사와 함께 쉽게 이수하세요!",
-      "intro": "한국장애인고용공단 직장 내 장애인 인식개선 사내강사 양성과정을 수료하였으며, 장애인에 대한 올바른 이해와 상호 존중의 조직문화를 확산하기 위한 장애인 인식개선 교육을 진행합니다"
-    },
-    {
-      "id": "mrx29tphn35",
-      "name": "장성국 마스터",
-      "org": "문화사업실 태산패밀리파크팀 팀장",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "조경, 조경기능사",
-      "quote": "25년 현장 경험과 합격 노하우를 담아 여러분의 자격 취득을 끝까지 함께하겠습니다",
-      "pick": "합격자를 배출한 사내강사와 함께하는 조경기능사!",
-      "intro": "조경 분야에서 25년 이상 실무를 수행하고 조경기사 자격을 보유한 전문가입니다. 다년간 조경기능사 합격자를 배출한 지도 경험을 바탕으로 핵심 이론과 실무를 체계적으로 전달합니다."
-    },
-    {
-      "id": "mrx2an5dq3i",
-      "name": "최준기 마스터",
-      "org": "교통사업실 교통지원팀 차장",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "한글(HWP) 문서 작성 실무",
-      "quote": "한글의 작은 기능 하나가 업무의 큰 변화를 만듭니다.",
-      "pick": "한글 실무 — 문서 작성, 한글 사용이 두렵다면, 여기서 시작하세요.",
-      "intro": "교원자격증을 보유한 3년차 사내강사로, 학교 강의와 외부 설명회 경험을 갖추고 있으며 한글 문서 작성 단축키 매뉴얼을 제작하는 등 실무 중심의 문서 작성 교육을 진행합니다."
-    },
-    {
-      "id": "mrx2azh0f7j",
-      "name": "안승우 마스터",
-      "org": "교통사업실 지하차도관리팀 팀장",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "음향장비",
-      "quote": "직접 보고, 만지고, 운영하는 소규모 실습으로 음향장비 관리의 핵심을 쉽게 배워보세요",
-      "pick": "음향관리 실무, 안정적인 시설 운영의 시작!",
-      "intro": "공연장 음향 및 무대 운영 분야에서 13년 이상 실무를 수행하며 아르코극장, 서울예술대학교 드라마센터 등 다양한 공연시설에서 근무하였습니다. 무대예술전문인(음향) 자격과 전문교육 이수 경험을 바탕으로 공사가 운영·관리하는 시설의 음향장비 운영 및 관리에 필요한 실무 지식을 전달합니다."
-    },
-    {
-      "id": "mrx2bqu3hyg",
-      "name": "허성문 마스터",
-      "org": "전략사업실 전략사업3팀 차장",
-      "color": "#7846c3",
-      "photo": "",
-      "specialty": "도시개발, 출자법인관리",
-      "quote": "도시개발사업은 교과서보다 현장이 더 많은 것을 알려줍니다. 실제 사업 추진 과정의 경험과 노하우를 아낌없이 공유하겠습니다",
-      "pick": "출자법인 관리 실무, 사례로 배우다!",
-      "intro": "풍무역세권 도시개발사업, 사우종합운동장부지 도시개발사업 등 다양한 개발사업을 수행하며 축적한 경험을 바탕으로 출자법인 관리와 사업관리 실무를 담당하고 있습니다. 실제 업무 사례를 중심으로 출자법인 관리의 핵심 실무와 노하우를 전달합니다"
-    },
-    {
-      "id": "mrx2dqxtug2",
-      "name": "조경아 마스터",
-      "org": "경영지원실 기획평가팀 차장",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "경영전략",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2e1w516i",
-      "name": "김정호 마스터",
-      "org": "경영지원실 기획평가팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "CCM",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2eaxc6w8",
-      "name": "이범형 마스터",
-      "org": "경영지원실 인사총무팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "기록물관리",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2em07jfl",
-      "name": "권혜민 마스터",
-      "org": "경영지원실 인사총무팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "급여관리",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2eza3jim",
-      "name": "김현선 마스터",
-      "org": "경영재정실 재무회계1팀 차장",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "지출관리",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2fcrpe9w",
-      "name": "이서하 마스터",
-      "org": "경영재정실 재무회계2팀 차장",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "지출관리",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2ftzvjzp",
-      "name": "박상미 마스터",
-      "org": "경영재정실 재무회계2팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "구매관리",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx2gl2nv08",
-      "name": "정상호 마스터",
-      "org": "경영재정실 재무회계2팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "계약관리",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx5zo3zb7o",
-      "name": "권이문 마스터",
-      "org": "윤리경영실 실장",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "갑질예방",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx5zwmf2u1",
-      "name": "권형기 마스터",
-      "org": "윤리경영실 청렴감사팀 차장",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "청렴ㆍ반부패",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx64pjl55r",
-      "name": "편정현 마스터",
-      "org": "윤리경영실 안전보건팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "안전보건",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx6501ddap",
-      "name": "박수지 마스터",
-      "org": "윤리경영실 안전보건팀 대리",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "안전보건",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    },
-    {
-      "id": "mrx65942xdm",
-      "name": "김동원 마스터",
-      "org": "윤리경영실 정보보안팀 차장",
-      "color": "#52b788",
-      "photo": "",
-      "specialty": "정보보안",
-      "quote": "",
-      "pick": "",
-      "intro": ""
-    }
+  courses:[
+    {id:"c1",type:"사내강사",title:"엑셀 실무 활용 과정",instructor:"김민지",category:"직무(공통)",start:"2026-07-10",end:"2026-07-11",schedule:"",duration:"12시간",capacity:20,status:"모집중",required:"",isNewCourse:false,planFile:"엑셀실무_강의계획서.hwp"},
+    {id:"c2",type:"사내강사",title:"지출회계 실무 교육",instructor:"박준호",category:"직무(전문)",start:"2026-08-06",end:"2026-09-24",schedule:"매주 수요일 14:00~16:00, 총 8회차",duration:"16시간",capacity:30,status:"모집중",required:"각 부서 지출예산담당자 전원 필수 참석",isNewCourse:false,planFile:"지출회계_강의계획서.pdf"},
+    {id:"c3",type:"사내강사",title:"AI 활용 실무",instructor:"김민지",category:"직무(공통)",start:"2026-07-25",end:"2026-07-25",schedule:"",duration:"3시간",capacity:40,status:"모집중",required:"",isNewCourse:true,planFile:""},
+    {id:"c4",type:"사내강사",title:"주말 캘리그라피 클래스",instructor:"이서연",category:"교양 및 시책",start:"2026-08-01",end:"2026-08-22",schedule:"매주 토요일 10:00~12:00, 총 4회차",duration:"8시간",capacity:12,status:"마감임박",required:"",isNewCourse:false,planFile:""},
+    {id:"c5",type:"집체교육",title:"개인정보보호 법정의무교육",instructor:"위탁기관",category:"직무(전문)",start:"2026-07-15",end:"2026-07-15",schedule:"",duration:"2시간",capacity:100,status:"모집중",required:"전 직원 필수 이수",isNewCourse:false,planFile:"개인정보보호_강의계획서.hwp"},
+    {id:"c6",type:"집체교육",title:"소방안전 교육",instructor:"한국소방안전원",category:"안전보건",start:"2026-08-20",end:"2026-08-20",schedule:"",duration:"4시간",capacity:50,status:"예정",required:"전 직원 연 1회 필수",isNewCourse:false,planFile:""},
+    {id:"c7",type:"집체교육",title:"성희롱·직장 내 괴롭힘 예방교육",instructor:"위탁기관",category:"직무(전문)",start:"2026-09-10",end:"2026-09-10",schedule:"",duration:"1시간",capacity:200,status:"예정",required:"전 직원 연 1회 법정의무",isNewCourse:false,planFile:""}
   ],
-  "courses": [
-    {
-      "id": "c1",
-      "type": "사내강사",
-      "title": "전기분야 안전관리 교육",
-      "instructor": "신준동 마스터",
-      "category": "직무(전문)",
-      "status": "모집중",
-      "start": "2026-09-10",
-      "end": "2026-10-15",
-      "capacity": 10,
-      "duration": "2시간 / 2차시",
-      "schedule": "16:00~18:00 / 시민회관 1층 세미나실",
-      "planFile": "",
-      "required": "교육 대상 : 전기안전관리 담당자 및 수강희망직원",
-      "isNewCourse": true
-    },
-    {
-      "id": "c2",
-      "type": "사내강사",
-      "title": "환경 기능사 취득과정",
-      "instructor": "곽원규 마스터",
-      "category": "직무(전문)",
-      "status": "모집중",
-      "start": "2026-08-18",
-      "end": "2027-03-26",
-      "capacity": 10,
-      "duration": "3시간 / 매주 1회",
-      "schedule": "15:00~18:00 / 무지개뜨는 언덕",
-      "planFile": "",
-      "required": "교육대상 : 자격 취득 희망직원",
-      "isNewCourse": true
-    },
-    {
-      "id": "c3",
-      "type": "사내강사",
-      "title": "음향설비 유지관리 및 실무",
-      "instructor": "안승우 마스터",
-      "category": "직무(전문)",
-      "status": "모집중",
-      "start": "2026-08-05",
-      "end": "2026-09-09",
-      "capacity": 5,
-      "duration": "3시간 / 6차시",
-      "schedule": "매주 수요일 15:00~18:00 /  시민회관 또는 기자재실습장(교육생사업장중심)",
-      "planFile": "",
-      "required": "교육대상자 : 음향설비, 대관관리 담당자 및 수강희망직원",
-      "isNewCourse": true
-    },
-    {
-      "id": "c4",
-      "type": "사내강사",
-      "title": "출자법인관리 실무사례 과정",
-      "instructor": "허성문 마스터",
-      "category": "직무(전문)",
-      "status": "모집중",
-      "start": "2026-08-20",
-      "end": "2026-08-20",
-      "capacity": 10,
-      "duration": "1시간 / 1회차",
-      "schedule": "10:00~11:00 / 본사 대회의실",
-      "planFile": "",
-      "required": "교육대상 : 개발사업담당자 및 수강희망직원",
-      "isNewCourse": true
-    },
-    {
-      "id": "c5",
-      "type": "집체교육",
-      "title": "고위직 성희롱ㆍ성폭력예방 교육",
-      "instructor": "한국양성평등진흥원 전문강사",
-      "category": "교양 및 시책",
-      "status": "모집중",
-      "start": "2026-08-24",
-      "end": "2026-08-24",
-      "capacity": 13,
-      "duration": "2시간",
-      "schedule": "10:00~12:00 / 본사 대회의실",
-      "planFile": "",
-      "required": "참석대상 : 실장 이상(기관장 포함)",
-      "isNewCourse": false
-    },
-    {
-      "id": "c6",
-      "type": "집체교육",
-      "title": "실무자 AI 활용 디지털역량 강화교육",
-      "instructor": "삼성리더십센터",
-      "category": "직무(공통)",
-      "status": "예정",
-      "start": "2026-09-11",
-      "end": "2026-09-11",
-      "capacity": 25,
-      "duration": "5시간",
-      "schedule": "13:00~18:00(5시간) / 본사 대회의실",
-      "planFile": "",
-      "required": "참석대상 : 공사 AI 교육 미이수자 우선 선발 및 수강 희망자\n※ 이수 후 현업적용 결과물 제출 과정",
-      "isNewCourse": true
-    },
-    {
-      "id": "c7",
-      "type": "집체교육",
-      "title": "성희롱·직장 내 괴롭힘 예방교육",
-      "instructor": "위탁기관",
-      "category": "직무(전문)",
-      "start": "2026-09-10",
-      "end": "2026-09-10",
-      "schedule": "",
-      "duration": "1시간",
-      "capacity": 200,
-      "status": "예정",
-      "required": "전 직원 연 1회 법정의무",
-      "isNewCourse": false,
-      "planFile": ""
-    },
-    {
-      "id": "mrx78s5rbap",
-      "type": "사내강사",
-      "title": "한글문서 기초역량 향상과정",
-      "instructor": "최준기 마스터",
-      "category": "직무(공통)",
-      "status": "모집중",
-      "start": "2026-11-20",
-      "end": "2026-11-27",
-      "capacity": 10,
-      "duration": "2시간 / 2차시",
-      "schedule": "16:00~18:00 / 본사 대회의실",
-      "planFile": "",
-      "required": "교육대상 : 문서작성 역량 향상 희망 직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7au2drds",
-      "type": "사내강사",
-      "title": "직장 내 장애인 인식 개선 교육",
-      "instructor": "민현희 마스터",
-      "category": "교양 및 시책",
-      "status": "모집중",
-      "start": "2026-09-30",
-      "end": "2026-12-31",
-      "capacity": 30,
-      "duration": "1시간 / 2회차",
-      "schedule": "10:00~11:00 / 재활용수집소 ※ 모집인원에 따라 변동가능",
-      "planFile": "",
-      "required": "교육대상 : 장애인 인식교육 온라인 강의 미이수자 및 수강희망직원",
-      "isNewCourse": true
-    },
-    {
-      "id": "mrx7jsfmx0u",
-      "type": "집체교육",
-      "title": "데이터기반 의사결정 교육(워크스킬 5급)_1회차",
-      "instructor": "삼성리더십센터",
-      "category": "직무(공통)",
-      "status": "예정",
-      "start": "2026-09-22",
-      "end": "2026-09-22",
-      "capacity": 25,
-      "duration": "4시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 전문직 이상 5급 직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7kr6irvy",
-      "type": "집체교육",
-      "title": "데이터기반 의사결정 교육(워크스킬 5급)_2회차",
-      "instructor": "삼성리더십센터",
-      "category": "직무(공통)",
-      "status": "예정",
-      "start": "2026-09-23",
-      "end": "2026-09-23",
-      "capacity": 25,
-      "duration": "4시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 전문직 이상 5급 직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7m2sa4xg",
-      "type": "집체교육",
-      "title": "보고 및 PT스킬 교육(워크스킬 6급)_1회차",
-      "instructor": "삼성리더십센터",
-      "category": "직무(공통)",
-      "status": "예정",
-      "start": "2026-10-20",
-      "end": "2026-10-20",
-      "capacity": 25,
-      "duration": "4시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 전문직 이상 6급 직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7mvsia50",
-      "type": "집체교육",
-      "title": "보고 및 PT스킬 교육(워크스킬 6급)_1회차",
-      "instructor": "삼성리더십센터",
-      "category": "직무(공통)",
-      "status": "예정",
-      "start": "2026-10-22",
-      "end": "2026-10-22",
-      "capacity": 25,
-      "duration": "4시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 전문직 이상 6급 직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7oc0gdx2",
-      "type": "집체교육",
-      "title": "협업기잔 문제해결과정(워크스킬 4급)",
-      "instructor": "삼성리더십센터",
-      "category": "직무(공통)",
-      "status": "예정",
-      "start": "2026-10-28",
-      "end": "2026-10-28",
-      "capacity": 25,
-      "duration": "3시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 전문직 이상 4급 직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7phxowgb",
-      "type": "집체교육",
-      "title": "삶의 질을 높이는 워라밸 교육",
-      "instructor": "삼성리더십센터",
-      "category": "교양 및 시책",
-      "status": "예정",
-      "start": "2026-11-18",
-      "end": "2026-11-18",
-      "capacity": 20,
-      "duration": "3시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 전직원 중 참석 희망자",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7qw78mko",
-      "type": "집체교육",
-      "title": "재취업지원 서비스 교육(기본과정)",
-      "instructor": "김정기교수",
-      "category": "교양 및 시책",
-      "status": "예정",
-      "start": "2026-11-03",
-      "end": "2026-11-03",
-      "capacity": 25,
-      "duration": "8시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 만 55세~60세 임직원",
-      "isNewCourse": false
-    },
-    {
-      "id": "mrx7so7te4j",
-      "type": "집체교육",
-      "title": "재취업지원 서비스(재무관리)",
-      "instructor": "김정기 교수",
-      "category": "교양 및 시책",
-      "status": "예정",
-      "start": "2026-11-05",
-      "end": "2026-11-05",
-      "capacity": 25,
-      "duration": "2시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 재취업지원서비스 교육 기본교육 이수자 및 참석 희망자",
-      "isNewCourse": true
-    },
-    {
-      "id": "mrx7tb5m14n",
-      "type": "집체교육",
-      "title": "재취업지원 서비스(구직전략)",
-      "instructor": "김정기 교수",
-      "category": "교양 및 시책",
-      "status": "예정",
-      "start": "2026-11-05",
-      "end": "2026-11-05",
-      "capacity": 25,
-      "duration": "2시간",
-      "schedule": "",
-      "planFile": "",
-      "required": "참석대상 : 재취업지원서비스 교육 기본교육 이수자 및 참석 희망자",
-      "isNewCourse": true
-    }
+  process:[
+    {id:"p1",step:"01",title:"교육일정 공문 수신",desc:"교육부서에서 교육과정·일정·대상을 안내하는 공문을 각 실/부서로 발송합니다.",tag:"교육부서 → 각 실"},
+    {id:"p2",step:"02",title:"참석자 취합",desc:"각 실(부서)에서 참석 희망자를 취합하고 참석자 명단을 작성합니다.",tag:"각 실 내부"},
+    {id:"p3",step:"03",title:"명단 공문 회신",desc:"작성된 참석자 명단을 공문으로 교육부서에 회신합니다.",tag:"각 실 → 교육부서"},
+    {id:"p4",step:"04",title:"명단 취합 및 확정",desc:"교육부서가 전체 명단을 취합하여 확정 후 참석 안내를 발송합니다.",tag:"교육부서 확정"},
+    {id:"p5",step:"05",title:"교육 참석",desc:"확정된 일정에 맞춰 교육에 참석합니다.",tag:"완료"}
   ],
-  "process": [
-    {
-      "id": "p1",
-      "step": "01",
-      "title": "교육일정 공문 수신",
-      "desc": "교육부서에서 교육과정·일정·대상을 안내하는 공문을 각 실/부서로 발송합니다.",
-      "tag": "교육부서 → 각 실"
-    },
-    {
-      "id": "p2",
-      "step": "02",
-      "title": "참석자 취합",
-      "desc": "각 실(부서)에서 참석 희망자를 취합하고 참석자 명단을 작성합니다.",
-      "tag": "각 실 내부"
-    },
-    {
-      "id": "p3",
-      "step": "03",
-      "title": "명단 공문 회신",
-      "desc": "작성된 참석자 명단을 공문으로 교육부서에 회신합니다.",
-      "tag": "각 실 → 교육부서"
-    },
-    {
-      "id": "p4",
-      "step": "04",
-      "title": "명단 취합 및 확정",
-      "desc": "교육부서가 전체 명단을 취합하여 확정 후 참석 안내를 발송합니다.",
-      "tag": "교육부서 확정"
-    },
-    {
-      "id": "p5",
-      "step": "05",
-      "title": "교육 참석",
-      "desc": "확정된 일정에 맞춰 교육에 참석합니다.",
-      "tag": "완료"
-    }
-  ],
-  "faqs": [
-    {
-      "id": "f1",
-      "q": "신청은 어떻게 하나요?",
-      "a": "공문을 통한 실(부서) 단위 신청입니다. 교육일정 공문 수신 후 부서 내 참석자를 취합하여 명단을 교육부서로 공문 회신해주세요."
-    },
-    {
-      "id": "f4",
-      "q": "교육 일정이 변경되면?",
-      "a": "일정 변경 시 교육부서에서 변경 안내 공문을 재발송하며, 이 페이지도 즉시 업데이트됩니다."
-    }
+  faqs:[
+    {id:"f1",q:"신청은 어떻게 하나요?",a:"공문을 통한 실(부서) 단위 신청입니다. 교육일정 공문 수신 후 부서 내 참석자를 취합하여 명단을 교육부서로 공문 회신해주세요."},
+    {id:"f2",q:"사내강사 교육과 집체교육은 어떻게 다른가요?",a:"사내강사 교육은 GUC 마스터(사내강사)가 직접 진행하는 과정이며, 집체교육은 법정의무교육 등 외부 위탁 기관에서 진행하는 교육입니다."},
+    {id:"f3",q:"일부 회차만 참석해도 되나요?",a:"필수과정은 전 회차 출석이 수료 요건입니다. 교양 및 시책·공통 과정은 부분 참석도 가능하나 강좌별 강의계획서 출석 기준을 참고해주세요."},
+    {id:"f4",q:"교육 일정이 변경되면?",a:"일정 변경 시 교육부서에서 변경 안내 공문을 재발송하며, 이 페이지도 즉시 업데이트됩니다."}
   ]
 };
 // @@EXPORT_DATA_END@@
@@ -1255,6 +688,5 @@ document.addEventListener("click",function(e){var mn=document.getElementById("mn
   renderAll();
 })();
 </script>
-
-
-</body></html>
+</body>
+</html>
